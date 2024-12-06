@@ -1,38 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply padding-top to all sections to account for the fixed navbar */
+.section {
+  padding-top: 60px; /* Adjust based on your navbar height */
+  margin-top: -60px; /* This compensates for the padding so the section starts higher */
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: rgb(226, 230, 241); */
   display: flex;
-  flex-direction: column;
   align-items: center;
+  /* justify-content: space-between; */
+  /* padding: 20px; */
+  /* width: 95vw; */
+  max-width: 1900px;
+  /* margin: 0rem auto; */
+}
+.nav-list-trans {
+  /* font-medium w-full flex justify-center p-2.5 md:border-none md:p-0 md:w-auto cursor-pointer */
+  display: flex;
+  /* justify-content: center; */
+  cursor: pointer;
+  font-weight: 600;
+  /* margin-top: 20px; */
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.nav-list-trans:hover {
+  transform: scale(1.1); /* Zoom in to 110% when hovered */
+  color: rgb(56, 55, 55);
+}
+.light-dark-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.light-dark-icon:hover {
+  transform: scale(1.2); /* Zoom in to 110% when hovered */
+}
+.underline {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgb(96, 105, 110);
+  text-underline-offset: 7px; /* Optional: adjust the gap */
+  font-weight: bold; /* Optional: make it stand out */
+}
+
+.about-main {
+  display: flex;
+  margin-top: 4rem;
+  /* width: 100vw; */
+  /* padding: 10px; */
+  /* align-items: center; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 5rem;
+}
+.contact-info-button {
   color: white;
+  padding: 10px 20px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  /* Smooth transition for scale and shadow */
+  /* :hover {
+    color: #355536;
+  } */
+}
+.contact-info-button:hover {
+  transform: scale(1.1); /* Zoom in to 110% when hovered */
+}
+.exp-main-view {
+  display: grid;
+  gap: 1rem;
+  border-width: 2px;
+  border-radius: 10px;
+  padding: 10px;
+  border-color: rgb(211, 211, 211);
+  overflow: hidden;
+}
+.exp-card {
+  border-width: 1px;
+  box-shadow: 0 4px 6px rgba(5, 2, 2, 0.1);
+  padding: 10px;
+  margin: 10px;
+  /* margin-top: 15px; */
+  /* width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px; */
+  /* animation: slideRight 3s ease-in-out forwards; */
+  border-radius: 10px;
+  /* background-color: #eaecea; */
+}
+.exp-display-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.exp-head {
+  font-size: 20px;
+  font-weight: 500;
+  /* color: #355536; */
+}
+.exp-content {
+  font-size: 17px;
+  font-weight: 400;
+}
+.contact-info-card {
+  border-width: 2px;
+  border-color: rgb(211, 211, 211);
+  padding: 20px;
+  /* width: 40em; */
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+.profile-img {
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
+  /* margin-left: 1rem; */
+  margin-top: 20px;
+  margin-bottom: 1rem;
+  /* m3x-height: 10rem; */
+  /* margin-right: auto; */
+  /* position: absolute; Allows for absolute positioning */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-list {
+  display: flex;
+  gap: 20px; /* Add spacing between items */
+}
+
+.nav-list h3 {
+  margin: 0; /* Reset default margin */
+  cursor: pointer; /* Optional: Makes items look clickable */
+}
+
+.nav-list h3:hover {
+  color: rgb(190, 170, 189); /* Change text color on hover */
+}
+
+.nav-icon {
+  display: none; /* Hide by default */
+  cursor: pointer;
+}
+
+.nav-list-open {
+  /* position: fixed;
+  top: 0;
+  left: -100%; 
+  height: 100vh;
+  width: 250px;
+  background-color: #222b29;
+  color: white;
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+  transition: left 0.3s ease-in-out; */
+  display: flex;
+}
+
+.nav-list-open.open {
+  left: 0; /* Slide into view */
+}
+
+/* for mobile view*/
+@media (max-width: 600px) {
+  .exp-main-view {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar {
+    display: none;
+  }
+
+  .nav-icon {
+    display: block; /* Show icon below 800px width */
+  }
+  .head h1 {
+    font-size: 24px; /* Smaller font size for mobile screens */
+  }
+  .about-main {
+    align-items: center;
+    display: inline;
+  }
+  .App {
+    justify-content: center;
+  }
+  .profile-img {
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+  }
+  .contact-info-button {
+    width: 12em;
   }
 }
+/* for tab view */
+@media (min-width: 750px) and (max-width: 1023px) {
+  /* T    grid-template-columns: repeat(2, 1fr);
+ablet view: 2 cards per row */
+  .exp-main-view {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* for only web view */
+@media (min-width: 1024px) {
+  .contact-info-card {
+    width: 40em;
+  }
+  .exp-main-view {
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 cards per row */
+  }
+}
+/* Keyframes for animation */
+/* @keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} */

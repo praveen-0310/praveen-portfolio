@@ -1,0 +1,61 @@
+.skills-main-view {
+  padding: 16px;
+}
+.skills-view {
+  display: flex;
+  border-width: 2px;
+  border-radius: 10px;
+  padding: 10px;
+
+  border-color: rgb(211, 211, 211);
+  flex-wrap: wrap; /* Allows items to wrap to the next row */
+  gap: 16px; /*Adds space between items*/
+}
+
+.skill-content {
+  flex: 1 1 calc(25% - 16px); /* Flex-basis: 25% width minus gap for mobile */
+  max-width: 100px; /* Maximum width of each item */
+  text-align: center;
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack image and name vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+
+.image-view {
+  width: 60px; /* Fixed size for images */
+  height: 60px;
+  margin-bottom: 8px;
+}
+
+.skill-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Keeps image aspect ratio */
+  border-radius: 8px; /* Optional rounded corners */
+}
+
+.skill-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Layout Adjustments */
+@media (max-width: 480px) {
+  .skill-content {
+    flex: 1 1 calc(25% - 16px); /* 4 items per row for mobile */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .skill-content {
+    flex: 1 1 calc(14.28% - 16px); /* 7 items per row for tablets */
+  }
+}
+
+@media (min-width: 769px) {
+  .skill-content {
+    flex: 1 1 calc(10% - 16px); /* 10 items per row for larger screens */
+  }
+}

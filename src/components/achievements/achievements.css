@@ -1,0 +1,47 @@
+.ach-main-view {
+  padding: 16px;
+}
+.card-view {
+  align-items: center;
+  padding: 10px;
+  border-width: 2px;
+  border-radius: 10px;
+  margin: 10px;
+  /* background-color: #eaecea; */
+}
+.row-view {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.content-view {
+  display: grid;
+  gap: 1rem;
+  border-width: 2px;
+  border-radius: 10px;
+  padding: 10px;
+  border-color: rgb(211, 211, 211);
+  overflow: hidden; /* Prevents overflow */
+}
+/* for mobile view*/
+@media (max-width: 600px) {
+  .content-view {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* for tab view */
+@media (min-width: 750px) and (max-width: 1023px) {
+  /* T    grid-template-columns: repeat(2, 1fr);
+  ablet view: 2 cards per row */
+  .content-view {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* for only web view */
+@media (min-width: 1024px) {
+  .content-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

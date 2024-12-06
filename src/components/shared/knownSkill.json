@@ -1,0 +1,31 @@
+{
+  "skill": [
+    { "name": "Java Script", "image": "js.svg" },
+    { "name": "Type Script", "image": "ts.svg" },
+    { "name": "React Native", "image": "reactjs.svg" },
+    { "name": "Expo", "image": "expo.png" },
+    { "name": "React JS", "image": "reactjs.svg" },
+    { "name": "Framer Motion", "image": "motion.png" },
+    { "name": "Tailwind Css", "image": "tailwind-css.svg" },
+    { "name": "Material UI", "image": "mui.svg" },
+    { "name": "Bootstrap", "image": "bootstrap.svg" },
+    { "name": "HTML", "image": "html.svg" },
+    { "name": "CSS", "image": "css.svg" },
+    { "name": "SCSS", "image": "scss.svg" },
+    { "name": "Sonarqube", "image": "sonarqube.png" },
+    { "name": "Redux", "image": "redux.svg" },
+    { "name": "Figma", "image": "figma.webp" },
+    { "name": "Firebase", "image": "firebase.png" },
+    { "name": "Photoshop", "image": "photoshop.svg" },
+    { "name": "Node JS", "image": "nodejs.svg" },
+    { "name": "PostgreSql", "image": "postgresql.svg" },
+    { "name": "Mongodb", "image": "mongodb.svg" },
+    { "name": "Graphql", "image": "graphql.svg" },
+    { "name": "Android Studio", "image": "androidstudio.svg" },
+    { "name": "X code", "image": "xcode.svg" },
+    { "name": "VS code", "image": "visual-studio-code.svg" },
+    { "name": "Git", "image": "git.svg" },
+    { "name": "Source Tree", "image": "sourcetree.svg" },
+    { "name": "C", "image": "c.svg" }
+  ]
+}
