@@ -103,7 +103,10 @@ export default function Navbar() {
             className={`light-dark-icon ${
               !isDark ? "bg-black" : "bg-white"
             } p-1 rounded-full mt-10 md:mt-0`}
-            onClick={toggleTheme}
+            onClick={() => {
+              toggleTheme();
+              showNav();
+            }}
           >
             {isDark ? (
               <MdDarkMode color="black" size={30} />
