@@ -55,15 +55,15 @@ export default function Experience() {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <div className="exp-display-content">
-            <GoRocket size={18} />
+            <GoRocket size={18} color="green" />
             <h2 className="exp-head text-green-500">Internship</h2>
           </div>
           <div className="exp-display-content">
-            <HiBuildingOffice size={18} />
+            <HiBuildingOffice size={18} color="green" />
             <h5 className="exp-content">Centizen Inc</h5>
           </div>
           <div className="exp-display-content">
-            <GiSandsOfTime size={18} />
+            <GiSandsOfTime size={18} color="green" />
             <h5 className="exp-content">Dec 2021 - May 2022</h5>
           </div>
         </motion.div>
@@ -77,15 +77,15 @@ export default function Experience() {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <div className="exp-display-content">
-            <GoRocket size={18} />
+            <GoRocket size={18} color="green" />
             <h2 className="exp-head text-green-500">Trainee</h2>
           </div>
           <div className="exp-display-content">
-            <HiBuildingOffice size={18} />
+            <HiBuildingOffice size={18} color="green" />
             <h5 className="exp-content">Centizen Inc</h5>
           </div>
           <div className="exp-display-content">
-            <GiSandsOfTime size={18} />
+            <GiSandsOfTime size={18} color="green" />
             <h5 className="exp-content">Jun 2022 - Nov 2022</h5>
           </div>
         </motion.div>
@@ -99,15 +99,15 @@ export default function Experience() {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <div className="exp-display-content ">
-            <GoRocket size={18} />
+            <GoRocket size={18} color="green" />
             <h2 className="exp-head text-green-500">Software Developer</h2>
           </div>
           <div className="exp-display-content">
-            <HiBuildingOffice size={18} />
+            <HiBuildingOffice size={18} color="green" />
             <h5 className="exp-content">Centizen Inc</h5>
           </div>
           <div className="exp-display-content">
-            <GiSandsOfTime size={18} />
+            <GiSandsOfTime size={18} color="green" />
             <h5 className="exp-content">Dec 2022 - Oct 2024</h5>
           </div>
         </motion.div>

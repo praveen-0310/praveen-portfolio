@@ -52,25 +52,27 @@ export default function Achievements() {
       <h2 className="flex text-2xl font-bold">Achievements</h2>
       <div className="content-view mt-5">
         <motion.div
-          className={`card-view ${isDark ? "bg-[#494e4e]" : "bg-[#eaecea]"}`}
+          className={`card-view  ${isDark ? "bg-[#494e4e]" : "bg-[#eaecea]"}`}
           ref={officeRef}
           animate={officeAnimation}
           initial={{ x: "100%", opacity: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <div className="row-view">
-            <SiOnlyoffice color="green" />
+          <div className="row-view mb-3 items-center">
+            <SiOnlyoffice size={20} color="green" />
             <h4 className="flex text-xl font-bold text-green-500">Office</h4>
           </div>
           <div className="row-view">
-            <GiAchievement color="green" />
+            <GiAchievement size={20} style={{ marginTop: 3 }} color="green" />
+
             <p className=" text-base">
               Rising Star by <span className="font-bold">Centizen Inc</span> on
               2022
             </p>
           </div>
-          <div className="row-view">
-            <GiAchievement color="green" />
+          <div className="row-view mt-2">
+            <GiAchievement size={20} style={{ marginTop: 3 }} color="green" />
+
             <p className=" text-base">
               Most Determined Employee by{" "}
               <span className="font-bold">Centizen Inc</span> on 2023
@@ -85,25 +87,27 @@ export default function Achievements() {
           initial={{ x: "100%", opacity: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <div className="row-view">
-            <FaUserGraduate color="green" />
+          <div className="row-view mb-3 items-center">
+            <FaUserGraduate size={20} color="green" />
             <h4 className="flex text-xl font-bold text-green-500">College</h4>
           </div>
-          <div className="row-view">
-            <GiAchievement color="green" />
+          <div className="row-view mt-2">
+            <GiAchievement size={20} style={{ marginTop: 3 }} color="green" />
             <p className=" text-base">
               Completed degree with <span className="font-bold">7.6 GPA</span>
             </p>
           </div>
-          <div className="row-view">
-            <GiAchievement color="green" />
+          <div className="row-view mt-2">
+            <GiAchievement size={20} style={{ marginTop: 3 }} color="green" />
+
             <p className=" text-base">
               Scored more than 800+ bronze medals by solving challenges in
               <span className="font-bold"> Skillrack</span>
             </p>
           </div>
-          <div className="row-view">
-            <GiAchievement color="green" />
+          <div className="row-view mt-2">
+            <GiAchievement size={20} style={{ marginTop: 3 }} color="green" />
+
             <p className=" text-base">
               Runner-up in{" "}
               <span className="font-bold">Zonal Level Basketball</span>{" "}
@@ -119,16 +123,18 @@ export default function Achievements() {
           initial={{ x: "100%", opacity: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <div className="row-view">
-            <FaSchool color="green" />
+          <div className="row-view mb-3 items-center">
+            <FaSchool size={20} color="green" />
             <h4 className="flex text-xl font-bold text-green-500">School</h4>
           </div>
           <div className="row-view">
-            <GiAchievement color="green" />
+            <GiAchievement size={20} style={{ marginTop: 3 }} color="green" />
+
             <p className=" text-base">Completed HSC with 80%</p>
           </div>
-          <div className="row-view">
-            <GiAchievement color="green" />
+          <div className="row-view mt-2">
+            <GiAchievement size={20} style={{ marginTop: 3 }} color="green" />
+
             <p className=" text-base">Completed SSLC with 88%</p>
           </div>
         </motion.div>

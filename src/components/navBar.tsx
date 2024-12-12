@@ -3,7 +3,7 @@ import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
 import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { useTheme } from "./themeContext";
-
+import { motion } from "framer-motion";
 export default function Navbar() {
   const navbarData = [
     { title: "About Me", href: "#about" },
@@ -61,7 +61,17 @@ export default function Navbar() {
         >
           Praveen Portfolio
         </h1>
-        <div className="md:hidden">
+        <motion.div
+          className="md:hidden"
+          animate={{
+            rotate: toggle ? 180 : 0,
+            scale: toggle ? 1.2 : 1,
+          }}
+          transition={{
+            duration: 0.5,
+            ease: "easeInOut",
+          }}
+        >
           {!toggle ? (
             <FiMenu
               onClick={showNav}
@@ -75,7 +85,7 @@ export default function Navbar() {
               size={27}
             />
           )}
-        </div>
+        </motion.div>
 
         <ul
           className={`${toggle ? "flex h-screen" : "hidden"} ${

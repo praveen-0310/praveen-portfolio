@@ -11,7 +11,7 @@ export default function Certification() {
       <div className="certificate-content-view mt-5">
         {[
           {
-            link: "https://www.mygreatlearning.com/certificate/HRNTOYQG",
+            link: "https://www.coursera.org/account/accomplishments/verify/4ACKCNPMWHM7",
             title: "React Native",
           },
           {
@@ -27,7 +27,7 @@ export default function Certification() {
             title: "SQL",
           },
           {
-            link: "https://www.skillrack.com/cert/141830/DRQ",
+            link: "https://www.skillrack.com/faces/free/certificate.xhtml?t=cert&id=166956&key=NNY",
             title: "C Programming",
           },
           {
